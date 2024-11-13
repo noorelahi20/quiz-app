@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD with Firebase</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+
+    <div class="main">  	
+      <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <label for="chk" aria-hidden="true">Sign up</label>
+            <input type="number" name="rollnumber" placeholder="RollNumber" required="" id="RollNumber">
+            <input type="text" name="txt" placeholder="User name" required="" id="studentName">
+            <input type="password" name="pswd" placeholder="Password" required="" id="studentPassword">
+            <button id="signup_btn">Sign up</button>
+        </div>
+  
+        <div class="login">
+            <label for="chk" aria-hidden="true">Login</label>
+            <input type="number" name="rollnumber" placeholder="RollNumber" required="" id="loginRollNumber">
+            <input type="password" name="pswd" placeholder="Password" required="" id="loginPassword">
+            <button id="login_btn">Login</button>
+        </div>  
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="./js/fireConfig.js"></script>
+
+    <script src="./js/myscript.js"></script>
+    
+  </body>
+</html>
